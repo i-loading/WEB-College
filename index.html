@@ -51,11 +51,17 @@
       width: 100%;
       font-size: 25px;
       background: #E1E1E1;
+      text-align: justify;
+      /* margin: 100px 0;  */
     }
     ul li {
       max-width: 1400px;
-      padding: 20px 0;
+      padding: 20px 40px;
       line-height: 32px;
+      display: block;
+    }
+    ul {
+      max-height: 100%;
     }
     .page_link {
       font-style: italic;
@@ -70,7 +76,7 @@
       content: '✅';
       position: absolute;
       top: 20px;
-      left: -45px;
+      left: -15px;
     }
     .undone {
       position: relative;
@@ -79,7 +85,29 @@
       content: '❌';
       position: absolute;
       top: 20px;
-      left: -45px;
+      left: -15px;
+    }
+
+    @media screen and (max-width: 1500px){
+      .done::after,
+      .undone::after {
+        left: 300px;
+        right: 0;
+      }
+    }
+    @media screen and (max-width: 460px){
+      body {
+        font-size: 20px;
+      }
+      ul li {
+        line-height: 25px;
+      }
+    }
+    @media screen and (max-width: 375px){
+      .done::after,
+      .undone::after {
+        left: 250px;
+      }
     }
 
   </style>
@@ -89,7 +117,7 @@
   <ul>
     <li class="done">
       <a href="Lab1/index.html" class="page_link">Работа №1</a>
-      <span><b>Используя материал лекции наверстать небольшую персональную страничку о себе:</b><br> Добавить фотографию, Добавить краткую информацию о себе. Дополнительно: Расширить контактную форму следующими элементами, Имя, Фамилия, Телефон, Возраст, Информация о себе, Вопрос, Изменить фон</span>
+      <span><b>Задание:</b><br>Используя материал лекции наверстать небольшую персональную страничку о себе: Добавить фотографию, Добавить краткую информацию о себе. Дополнительно: Расширить контактную форму следующими элементами, Имя, Фамилия, Телефон, Возраст, Информация о себе, Вопрос, Изменить фон</span>
     </li>
     <li class="done">
       <a href="Lab2_blog/blog.html" class="page_link">Работа №2</a>
