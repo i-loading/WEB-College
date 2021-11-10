@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+  <title>Страница с лабами</title>
+  <style>
+
+    * {
+      padding: 0;
+      margin: 0;
+      border: 0;
+      font-family: 'Red Hat Mono', monospace;
+    }
+    *,*::before,*::after{
+      box-sizing: border-box;
+    }
+    :focus,:active {outline: none;}
+    a:focus,a:active {outline: none;}
+    nav,footer,header,aside {display: block;}
+    html,body {
+      height: 100%;
+      width: 100%;
+      font-size: 100%;
+      line-height: 1;
+      font-size: 14px;
+      -ms-text-size-adjust: 100%;
+      -moz-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+    input,button,textarea {font-family: inherit;}
+    input::-ms-clear{display: none;}
+    button{cursor: pointer;}
+    button::-moz-focus-inner {padding:0;border:0;}
+    a, a:visited{text-decoration: none;}
+    a:hover{text-decoration: none;}
+    ul{list-style: none;}
+    img{vertical-align: top;}
+    h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100%;
+      font-size: 25px;
+      background: #E1E1E1;
+    }
+    ul li {
+      max-width: 1400px;
+      padding: 20px 0;
+      line-height: 32px;
+    }
+    .page_link {
+      font-style: italic;
+      font-weight: bold;
+      text-decoration: underline;
+      transition: all 0.2s ease-in-out;
+    }
+    .done {
+      position: relative;
+    }
+    .done::after {
+      content: '✅';
+      position: absolute;
+      top: 20px;
+      left: -45px;
+    }
+    .undone {
+      position: relative;
+    }
+    .undone::after {
+      content: '❌';
+      position: absolute;
+      top: 20px;
+      left: -45px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li class="done">
+      <a href="Lab1/index.html" class="page_link">Работа №1</a>
+      <span><b>Используя материал лекции наверстать небольшую персональную страничку о себе:</b><br> Добавить фотографию, Добавить краткую информацию о себе. Дополнительно: Расширить контактную форму следующими элементами, Имя, Фамилия, Телефон, Возраст, Информация о себе, Вопрос, Изменить фон</span>
+    </li>
+    <li class="done">
+      <a href="Lab2_blog/blog.html" class="page_link">Работа №2</a>
+      <span><b>Задание:</b><br> Разработать персональный блог, Придумать уникальный контент, Создать базовую структура блога, Стилизовать фон, логотип и текст, Добавить содержимое блога.</span>
+    </li>
+    <li class="undone">
+      <a href="Lab3/index.html" class="page_link">Работа №3</a>
+      <span><b>Задание:</b><br> Создать страницу похожую на выбранный шаблон, Стили должны находится в отдельном css файле</span>
+    </li>
+    <li class="done">
+      <a href="Lab4_blog/blog.html" class="page_link">Работа №4</a>
+      <span><b>Задание:</b><br> Пользуясь заданием из практики <a href="Lab2_blog/blog.html">html5</a> адаптировать сайт под разные устройства</span>
+    </li>
+    <li class="undone">
+      <a href="Lab5/index.html" class="page_link">Работа №5</a>
+      <span>
+        <b>Задание:</b> <br>
+        1) С помощью только CSS и HTML создать таблицу успеваемости. При наведении курсора мыши на любую ячейку, сама ячейка, строка и столбец, к которому она принадлежит, должны подсвечиваться цветом. <br> 
+        2) Создать диаграмму, которая отражает зависимость прибыли от года. столбцы диаграммы должны иметь градиентную окраску. <br>
+        3) Создать блок с фиксированным положением, который не будет менять свою позицию при прокрутке страницы. Сначала блок почти полностью скрытый, но при наведении на него курсора мыши, блок плавно выезжает вправо. Если курсор убрать, блок снова плавно возвращается в исходное положение</span>
+    </li>
+    <li class="undone">
+      <a href="Lab6/index.html" class="page_link">Работа №6</a>
+      <span><b>Задание:</b><br> Разработать анимированную сцену, используя лишь возможности CSS и HTML (без Javascript).</span>
+      <span>Вариант 17(7): Нарисовать полумесяц. Полумесяц должен по кругу перемещаться по небу (появляться снизу слева и по кругу перемещаться по часовой стрелке).</span>
+    </li>
+  </ul>
+
+  <script src="assets/js/script.min.js"></script>
+</body>
+</html>

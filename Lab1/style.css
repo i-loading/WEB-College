@@ -1,0 +1,36 @@
+* {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Times New Roman';
+}
+body {
+  background: url('https://st.depositphotos.com/1903923/1678/v/600/depositphotos_16785907-stock-illustration-seamless-dollars-background.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1, p {
+  color: #000;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px 20px;
+}
+img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+textarea {
+  resize: none;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form input,
+form textarea {
+  text-align: left;
+  padding: 5px 0 5px 10px;
+  margin: 5px 0;
+}

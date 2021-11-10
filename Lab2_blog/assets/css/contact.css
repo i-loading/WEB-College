@@ -1,0 +1,139 @@
+.location_section .location_wrapper {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 30px;
+   padding: 150px 0;
+}
+.left_part {
+   max-width: 555px;
+}
+form {
+   max-width: 555px;
+}
+form .top_input {
+   display: flex;
+   justify-content: space-between;
+}
+form input {
+	outline: none;
+	width: 261px;
+	margin: 0 0 30px 0;
+   padding: 18px 20px;
+   background: #fefcf9;
+   transition: all 0.2s ease-in-out;
+   font-size: 12px;
+}
+form input::placeholder {
+   text-transform: uppercase;
+   color: #cccccc;
+}
+form input:focus {
+	border: 1px solid #EF5A4B;
+}
+form .name_input {
+   margin-right: 29px;
+}
+form .object_input {
+   width: 513px;
+}
+form input, .area {
+	border: 1px solid #e5e5e5;
+}
+form .area {
+   background: #fefcf9;
+	width: 533px;
+	height: 198px;
+	resize: none;
+   display: block;
+   transition: all 0.2s ease-in-out;
+   padding-top: 18px;
+   padding-left: 20px;
+   font-size: 12px;
+} 
+form .area::placeholder {
+   font-size: 12px;
+   text-transform: uppercase;
+   color: #cccccc;
+}
+form .area:focus {
+	border: 1px solid #EF5A4B;
+	border-radius: none;
+	outline: none;
+}
+form .sub {
+   display: inline-block;
+   color: #fff;
+   background: #7beec7;
+   font-size: 14px;
+	text-transform: uppercase;
+   padding: 18px 61px;
+   margin-top: 30px;
+	transition: all 0.2s ease;
+}
+form .sub:hover {
+	-webkit-transform: scale(1.01);
+   -ms-transform: scale(1.01);
+   transform: scale(1.01);
+   -webkit-box-shadow: 0 0 10px rgba(0,0,0,.2);
+   box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+.contact_info h3{
+   margin-top: 97px;
+   font-size: 18px;
+   text-transform: uppercase;
+   color: #60606e;
+   font-family: 'Montserrat';
+}
+.contact_info .contact_desc {
+   margin: 25px 0;
+}
+.contact_info > * {
+   font-family: 'Open Sans';
+   font-size: 14px;
+}
+.contact_info .links {
+   display: block;
+   margin-top: 15px;
+}
+.contact_socials {
+   margin-top: 30px;
+   display: flex;
+}
+.contact_socials i {
+   margin-right: 18px;
+   color: #999999;
+}
+@media screen and (max-width: 1156px) {
+   .map {
+      width: 90%;
+   }
+}
+@media screen and (max-width: 866px) {
+   .location_section .location_wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .map {
+      width: 70%;
+   }
+}
+@media screen and (max-width: 570px) {
+   .left_part {
+      max-width: 90%;
+   }
+   form .top_input {
+      flex-direction: column;
+   }
+   form .name_input,
+   form .mail_input,
+   form .object_input,
+   form .area {
+      width: 90%;
+   }
+   form .area {
+      width: 94%;
+      padding-right: 0;
+      margin-right: 0;
+   }
+}
